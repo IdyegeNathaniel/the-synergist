@@ -1,26 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap');
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme{
+    --font-mont: 'Montserrat', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --font-syne: 'Syne', sans-serif;
+    
+    
+    --color-primary: #D4AF37; /* GOLD: BUTTONS, HIGHLIGHT, CTA, ICONS */
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+    --color-main: #1A1A1A;  /* MAIN BRAND COLOUR: HEADER, FOOTER, NAVIGATION */
+    
+    --color-secondary: #1E293B;  /* BODY TEXT */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-soft: #F8F8F8;  /* SOFT WHITE*/
+    
+    --color-light: #D1D5DB;  /* LIGHT GRAY*/
+
+
+
+    
+  
   }
-}
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #1A1A1A;
+  font-family: sans-serif;
 }
