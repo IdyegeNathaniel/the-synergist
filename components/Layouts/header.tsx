@@ -2,21 +2,30 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Logo from "@/public/Images/synergist.png";
 import { Menu, X } from "lucide-react";
 import { Button } from "../ui/button";
 import { usePathname } from "next/navigation";
+import { useClickOutside } from "@/hooks/useClickOut";
 
 const Header: React.FC = () => {
   const pathname = usePathname();
   const [showMenu, setShowMenu] = useState<boolean>(false);
   
+  const menuRef = useClickOutside(() => setShowMenu(false))
+
+useEffect(() => {
+  document.body.style.overflow = showMenu ? "hidden" : "unset";
+  return () => {
+    document.body.style.overflow = "unset";
+  };
+}, [showMenu]);
 
   return (
-    <nav className="w-full h-24 top-0 sticky z-20 bg-main backdrop-blur-md flex justify-between items-center px-5 py-8 border-b border-gray-200 text-primary">
+    <nav className="w-full h-24 top-0 sticky z-20 bg-main flex justify-between items-center px-5 py-8 border-b border-gray-200 text-primary" ref={menuRef}>
       <Link href="/" className="flex shrink-0 items-center z-20">
-        <Image src={Logo} className="w-15 h-15" alt="Brand-Logo" />
+        <Image src={Logo} className="w-16 h-16 object-contain" alt="Brand-Logo" />
         <h2 className="hidden sm:block text-2xl font-bold font-syne">
           The Synergist
         </h2>
@@ -47,7 +56,7 @@ const Header: React.FC = () => {
           <div className="absolute flex justify-center items-center">
             <Image
               src={Logo}
-              className="w-75 h-75 opacity-10"
+              className="w-72 h-72 opacity-10"
               alt="Brand-Logo"
             />
           </div>
@@ -59,9 +68,10 @@ const Header: React.FC = () => {
                 <Link
                   key={label}
                   href={href}
+                  onClick={() => setShowMenu(false)}
                   className={`text-4xl font-bold transition-colors duration-200 ${
                     isActive
-                      ? "text-soft font-semibold border-b-2 border-primary"
+                      ? `text-soft font-semibold border-l-4 border-primary`
                       : "text-soft/60 hover:text-soft"
                   }`}
                 >

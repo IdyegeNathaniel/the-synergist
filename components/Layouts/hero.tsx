@@ -1,16 +1,15 @@
 import Image from "next/image";
 import React from "react";
-import HeadShot from "@/public/Images/Headshot - The Synergist.jpg";
+import HeadShot from "@/public/Images/Headshot-.jpg";
 import { Button } from "../ui/button";
 import Link from "next/link";
 
 const Hero: React.FC = () => {
   return (
     <section
-      className="w-full h-screen relative bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${HeadShot})` }}
+      className="w-full h-screen relative bg-cover bg-center bg-main"
     >
-
+      <div className="absolute inset-0 bg-black/60" />
       <div className="relative z-10 container max-w-7xl h-full mx-auto px-10 flex items-center">
         <div className="flex flex-col md:flex-row items-center gap-12 w-full">
           <div className="shrink-0">
@@ -36,10 +35,10 @@ const Hero: React.FC = () => {
 
             <div className="flex flex-wrap gap-4 mt-2 justify-center md:justify-start">
               <Button variant={"default"} size="lg" className="px-8 py-3 cursor-pointer" asChild>
-                <Link href="mailto:247synergytribe@gmail.com?subject=I Want to Book a Session">Book a Session</Link>
+                <Link target="_blank" href="mailto:247synergytribe@gmail.com?subject=I Want to Book a Session">Book a Session</Link>
               </Button>
               <Button variant="outline" size="lg" className="" asChild>
-                <Link href="/https://forms.gle/TKdpXnH7barHKJNm7">Join the Community</Link>
+                <Link target="_blank" href="https://forms.gle/TKdpXnH7barHKJNm7">Join the Community</Link>
               </Button>
             </div>
           </div>

@@ -7,7 +7,7 @@ import { Insta, YOuTube } from "../assets/svg";
 
 const Footer: React.FC = () => {
   return (
-    <section className="w-full bg-main py-4  border border-t-">
+    <section className="w-full bg-main py-4">
       <div className="flex flex-col md:flex-row items-center justify-between px-8 py-6 md:px-20">
         <div className="">
           
@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
             <span className="bg-pink-500 flex items-center justify-center h-10 w-10 p-4 rounded-full">
               <Link
                 target="_blank"
-                href={"/Instagram.com/Immanuel Zever"}
+                href={"https://Instagram.com/Immanuel Zever"}
                 className="flex items-center cursor-pointer"
               >
                 <Insta fill="white" className="w-6 h-6" />
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
             <span className="bg-red-600 flex items-center justify-center h-10 w-10 p-4 rounded-full">
               <Link
                 target="_blank"
-                href={"/Instagram.com/Immanuel Zever"}
+                href={"https://www.youtube.com/@immanuelzever"}
                 className="flex items-center cursor-pointer"
               >
                 <YOuTube fill="white" className="w-6 h-6" />

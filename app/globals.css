@@ -25,6 +25,7 @@
   }
 
 body {
-  background: #1A1A1A;
-  font-family: sans-serif;
+  color: var(--color-soft);
+  font-family: var(--font-inter);
+  overflow-x: hidden;
 }

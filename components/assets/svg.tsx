@@ -1,3 +1,4 @@
+
 interface IconProps {
   className?: string;
   fill?: string;
@@ -8,7 +9,7 @@ export function Insta({ className, fill }: IconProps) {
     <svg
       stroke="currentColor"
       fill={fill}
-      stroke-width="2"
+      strokeWidth="2"
       viewBox="0 0 448 512"
       height="1em"
       width="1em"
@@ -25,7 +26,7 @@ export function YOuTube({ className, fill }: IconProps) {
     <svg
       stroke="currentColor"
       fill={fill}
-      stroke-width="0"
+      strokeWidth="0"
       viewBox="0 0 576 512"
       height="1em"
       width="1em"

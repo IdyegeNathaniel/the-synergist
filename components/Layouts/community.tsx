@@ -29,7 +29,7 @@ const Community: React.FC = () => {
           </p>
 
           <Button variant="default" size="lg" className="rounded-md" asChild>
-            <Link href="https://forms.gle/TKdpXnH7barHKJNm7">
+            <Link target="blank" href="https://forms.gle/TKdpXnH7barHKJNm7">
               Join the Community
               <ArrowRight />
             </Link>

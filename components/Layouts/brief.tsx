@@ -16,7 +16,7 @@ const Brief: React.FC = () => {
           </p>
         </div>
         <Button variant="default" size="lg" className="rounded-md" asChild>
-          <Link href="/">
+          <Link href="/about">
             More on The Synergist
             <ArrowRight size={20} strokeWidth={2} />
           </Link>
