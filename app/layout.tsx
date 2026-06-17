@@ -20,10 +20,12 @@ const montSerrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  //metadataBase: new URL("https://"),
-
-  title: "The Synergist",
-  description: "Home of The Synergist and Books Catalogues",
+  metadataBase: new URL("https://immanuelzever.vercel.app/"),
+  title: {
+  default: "The Synergist",
+  template: "%s | The Synergist",
+},
+  description: "Entrepreneur, Business Psychologist, Author, and Speaker empowering entrepreneurs to build sustainable, purpose-driven businesses through psychology, strategy, and biblical principles.",
   keywords: [
     "Business Psychologist",
     "The Synergist",
@@ -33,22 +35,26 @@ export const metadata: Metadata = {
     "Business Coach",
     "mentor",
     "Reintroduction to money",
+    "Financial Growth",
+    "Christian Entrepreneur",
+    "Public Speaker",
+    "Personal Development",
   ],
   authors: [{ name: "Immanuel Zever" }],
-  creator: "Nathaniel Idyege",
-  publisher: "Nathaniel Idyege",
+  creator: "Immanuel Zever",
+  publisher: "Immanuel Zever",
 
   openGraph: {
     type: "website",
     locale: "en_US",
-    //url: 'https://',
+    url: 'https://immanuelzever.vercel.app/',
     title: "Immanuel Zever - Business Psychologist",
     description:
-      "An Entrepreneur, Business Psychologist, Author and Co-Founder of Synergy Academy.",
-    siteName: "The Synergist Page",
+     "Helping entrepreneurs build profitable, purpose-driven businesses through psychology, strategy, and biblical principles.",
+    siteName: "The Synergist",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/Images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "The Synergist - Business Psychologist",
@@ -78,9 +84,11 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${syne.variable} ${montSerrat.variable} h-full antialiased`}
     >
+      <body className="min-h-full flex flex-col">
       <Header />
-      <body className="min-h-full flex flex-col">{children}</body>
+      <main className="flex-1">{children}</main>
       <Footer />
+      </body>
     </html>
   );
 }
