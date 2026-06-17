@@ -22,7 +22,7 @@ const montSerrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL("https://immanuelzever.vercel.app/"),
   title: {
-  default: "The Synergist",
+  default: "The Synergist | Business Psychologist",
   template: "%s | The Synergist",
 },
   description: "Entrepreneur, Business Psychologist, Author, and Speaker empowering entrepreneurs to build sustainable, purpose-driven businesses through psychology, strategy, and biblical principles.",
