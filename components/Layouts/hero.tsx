@@ -12,7 +12,16 @@ const Hero: React.FC = () => {
     backgroundRepeat: "no-repeat",
   };
   return (
-    <section className="relative w-full h-screen bg-contain" style={HeroBg}>
+    <section className="relative w-full h-screen bg-contain">
+      <Image
+        src={HeadShot}
+        alt="Hero background"
+        fill
+        priority
+        quality={80}
+        className="object-cover"
+        style={{ objectPosition: "center 20%" }}
+      />
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative container max-w-7xl h-full mx-auto px-6 flex items-center z-10">
         <div className="flex flex-col gap-5 text-white text-center md:text-left">
