@@ -93,19 +93,19 @@ export default function BookPage() {
 
         <div className="max-w-7xl mx-auto py-6 px-6 md:px-8">
           <h2 className="text-2xl md:text-4xl text-center text-primary font-bold">
-            Testimonials
+            Reviews
           </h2>
 
-          <div className="w-full flex flex-col md:flex-row items-center justify-center gap-5 py-5 px-4 ">
+          <div className="w-full flex flex-wrap items-center justify-center gap-5 py-5 px-4 ">
             {TESTIMONIAL.map((testimony) => (
               <div
-                className="w-full md:w-64 min-h-52 flex flex-col gap-3 rounded-md border border-primary/20 bg-main/20 text-soft/70 py-3 px-3 "
+                className="w-full md:w-64 min-h-52 flex flex-col gap-1 rounded-md border border-primary/20 bg-main/20 text-soft/70 py-3 px-3 "
                 key={testimony.id}
               >
                 <span className="text-3xl text-primary">"</span>
-                <p className="text-lg font-mont">{testimony.text}</p>
-                <span className="text-3xl text-primary">"</span>
-                <p className="text-right">— {testimony.author}</p>
+                <p className="text-sm font-mont">{testimony.text}</p>
+                <span className="text-3xl text-primary text-right">"</span>
+                <p className="text-right italic text-sm">— {testimony.author}</p>
               </div>
             ))}
           </div>
