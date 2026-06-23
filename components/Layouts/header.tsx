@@ -33,7 +33,7 @@ useEffect(() => {
 
       <Button
         variant="outline"
-        size={"lg"}
+        size="lg"
         className="flex items-center gap-1 cursor-pointer z-50"
         onClick={() => setShowMenu((prev) => !prev)}
       >
@@ -42,7 +42,7 @@ useEffect(() => {
         ) : (
           <Menu size={18} strokeWidth={2} />
         )}
-        <p className="text-xl">MENU</p>
+        <p className="text-sm md:text-xl pl-2">MENU</p>
       </Button>
 
       {/* MENU BAACKDROP */}

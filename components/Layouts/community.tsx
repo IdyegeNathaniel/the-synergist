@@ -14,18 +14,17 @@ const Community: React.FC = () => {
           </h2>
           <p className="text-sm leading-relaxed text-justify text-soft/60 mb-5">
             Synergy Tribe is a growth-focused community for individuals who are
-            committed to increasing their influence, income, and impact. It
-            brings together entrepreneurs, creators, professionals, leaders, and
+            committed to becoming the ultimate version of themselves. It brings
+            together entrepreneurs, creators, professionals, leaders, and
             purpose-driven individuals who believe that transformation happens
-            faster through learning, collaboration, and accountability.
+            faster through learning, execution, and accountability.
             <br />
             <br />
-            Through trainings, book reviews, mentorship, networking
-            opportunities, and practical growth resources, members are equipped
-            with the knowledge, mindset, and strategies needed to succeed in
-            business, leadership, communication, and personal development. Our
-            mission is simple: to ignite within the hearts of individuals the
-            desire to become more, do more and have more.
+            Through trainings and coaching sessions, members of the tribe are
+            equipped with the mindset, skillset and strategies needed to succeed
+            in business, leadership, and their personal life. Our mission is
+            simple: to ignite within the hearts of individuals the desire to
+            become more, do more and have more.
           </p>
 
           <Button variant="default" size="lg" className="rounded-md" asChild>

@@ -36,8 +36,8 @@ const Books: React.FC = () => {
           </p>
 
           <Button variant="default" size="lg" className="rounded-md" asChild>
-          <Link target="_blank" href="https://selar.com/RTM">
-            Get the Book
+          <Link href="/books">
+            More about the book
             <ArrowRight />
           </Link>
         </Button>

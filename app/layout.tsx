@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Syne, Montserrat } from "next/font/google";
+import { Inter, Syne, Montserrat, Playfair } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Layouts/header";
 import Footer from "@/components/Layouts/footer";
@@ -14,8 +14,13 @@ const syne = Syne({
   subsets: ["latin"],
 });
 
+const playFair = Playfair({
+  variable: "--font-play",
+  subsets: ["latin"],
+});
+
 const montSerrat = Montserrat({
-  variable: "--font-montserrat",
+  variable: "--font-mont",
   subsets: ["latin"],
 });
 
@@ -82,7 +87,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${syne.variable} ${montSerrat.variable} h-full antialiased`}
+      className={`${inter.variable} ${syne.variable} ${playFair.variable} ${montSerrat.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
       <Header />

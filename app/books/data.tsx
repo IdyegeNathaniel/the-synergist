@@ -43,3 +43,33 @@ export const TESTIMONIAL: TestimonialTypes[] = [
     text: "Only two chapters in, and my entire philosophy about money has changed. This book has transformed how I think about money, management, and financial growth.",
   },
 ];
+
+//BOOK CONTENT
+
+interface ContentTypes {
+  title: string;
+  text: string;
+}
+
+export const CONTENT: ContentTypes[] = [
+  {
+    title: "The P.A.A.R Framework",
+    text: "This system reveals how your Philosophy shapes your altitude, your altitude influences your actions ultimately create your financial Results.",
+  },
+  {
+    title: "The Money Trinity",
+    text: "Most people only focus only on earning, but this book teaches the 3-stage system of financial growth: Earning, Managing and Multiplying.",
+  },
+  {
+    title: "How to Build your Financial House",
+    text: "Understand how different classes think, how money flows differently at each level, and why mindset affects financial outcomes more than people realise.",
+  },
+  {
+    title: "The Law that Governs Money",
+    text: "The hidden system that programmed your financial thinking long before you started earning money... You were already learning about money subconsciously. Learn the rules that are never exposed in the classroom... Because money responds to laws, not your emotions and wishes.",
+  },
+  {
+    title: "How to Create your personal freedom/Retirement Plan",
+    text: "A practical roadmap for long-term financial transformation using proven financial systems of advantage.",
+  },
+];
