@@ -3,6 +3,7 @@ import { Inter, Syne, Montserrat, Playfair } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Layouts/header";
 import Footer from "@/components/Layouts/footer";
+import { ToastContainer } from "react-toastify";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -91,6 +92,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
       <Header />
+      <ToastContainer />
       <main className="flex-1">{children}</main>
       <Footer />
       </body>

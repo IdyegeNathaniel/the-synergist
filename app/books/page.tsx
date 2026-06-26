@@ -108,9 +108,9 @@ export default function BookPage() {
                 className="w-full md:w-80 min-h-52 flex flex-col gap-1 text-justify rounded-md border border-primary/20 bg-main/20 text-soft/70 py-3 px-3 "
                 key={testimony.id}
               >
-                <span className="text-3xl text-primary">"</span>
+                <span className="text-3xl text-primary italic">"</span>
                 <p className="text-sm font-mont">{testimony.text}</p>
-                <span className="text-3xl text-primary text-right">"</span>
+                <span className="text-3xl text-primary text-right italic">"</span>
                 <p className="text-right italic text-sm">
                   — {testimony.author}
                 </p>
