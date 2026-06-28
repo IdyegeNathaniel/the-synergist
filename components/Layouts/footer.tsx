@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
             <span className="bg-pink-500 flex items-center justify-center h-10 w-10 p-4 rounded-full">
               <Link
                 target="_blank"
-                href={"https://Instagram.com/Immanuel Zever"}
+                href={"https://Instagram.com/ImmanuelZever"}
                 className="flex items-center cursor-pointer"
               >
                 <Insta fill="white" className="w-6 h-6" />
