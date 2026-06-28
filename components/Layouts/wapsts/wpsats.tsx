@@ -1,6 +1,7 @@
-import React from "react";
+"use client";
 import { Review } from "./data";
 import { Quote } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Wpsats = () => {
   return (
@@ -19,8 +20,12 @@ const Wpsats = () => {
 
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-5 px-5 ">
           {Review.map((review) => (
-            <div
+            <motion.div
               key={review.author}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              viewport={{ once: true }}
               className="w-full flex flex-col gap-3 text-white py-3 px-3 border border-primary/20"
             >
               <div className="h-1 w-16 bg-primary rounded-full mb-5" />
@@ -30,15 +35,19 @@ const Wpsats = () => {
                 strokeWidth={1.5}
               />
 
-              <p className="text-base font-mont mb-5 leading-normal min-h-fit">{review.text}</p>
+              <p className="text-base font-mont mb-5 leading-normal min-h-fit">
+                {review.text}
+              </p>
 
               <div className=" border-zinc-800 pt-4">
-                <h4 className="font-semibold text-sm md:text-base text-primary">{review.author}</h4>
-                {
-                  review.role && <p className="text-sm text-light/90 ">{review.role}</p>
-                }
+                <h4 className="font-semibold text-sm md:text-base text-primary">
+                  {review.author}
+                </h4>
+                {review.role && (
+                  <p className="text-sm text-light/90 ">{review.role}</p>
+                )}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

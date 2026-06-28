@@ -1,14 +1,20 @@
+"use client"
+
 import Image from "next/image";
 import Emblem from "@/public/Images/synergist.png";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion"
 
 const Community: React.FC = () => {
   return (
-    <section className="w-full min-h-screen bg-main py-4 text-light">
+    <section className="w-full min-h-screen bg-main py-4 text-light overflow-hidden">
       <div className="max-w-7xl w-full flex flex-col-reverse md:flex-row gap-5 items-center mx-auto py-4 px-6 md:px-20">
-        <div className="w-full md:w-1/2 flex flex-col gap-3">
+        <motion.div initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6,  }}
+           className="w-full md:w-1/2 flex flex-col gap-3">
           <h2 className="text-lg md:text-2xl text-primary font-semibold leading-relaxed font-mont">
             THE SYNERGY TRIBE
           </h2>
@@ -33,15 +39,18 @@ const Community: React.FC = () => {
               <ArrowRight />
             </Link>
           </Button>
-        </div>
+        </motion.div>
 
-        <div className="w-full md:w-1/2 flex justify-center">
+        <motion.div initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6,  }}
+           className="w-full md:w-1/2 flex justify-center">
           <Image
             src={Emblem}
             className="w-72 md:w-96 object-contain animate-pulse duration-500"
             alt="community-emblem"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
