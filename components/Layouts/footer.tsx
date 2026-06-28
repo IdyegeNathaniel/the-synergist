@@ -26,6 +26,7 @@ const Footer: React.FC = () => {
                 target="_blank"
                 href={"https://Instagram.com/ImmanuelZever"}
                 className="flex items-center cursor-pointer"
+                aria-label="Visit Immanuel Zever on Instagram"
               >
                 <Insta fill="white" className="w-6 h-6" />
               </Link>
@@ -36,6 +37,7 @@ const Footer: React.FC = () => {
                 target="_blank"
                 href={"https://www.youtube.com/@immanuelzever"}
                 className="flex items-center cursor-pointer"
+                aria-label="Visit Immanuel Zever on Youtube"
               >
                 <YOuTube fill="white" className="w-6 h-6" />
               </Link>

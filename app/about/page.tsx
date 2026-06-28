@@ -1,18 +1,20 @@
 import header from "@/public/Images/Headshot-.jpg";
 import { ChevronDown } from "lucide-react";
+import Image from "next/image";
 
 export default function AboutPage() {
-  const bgStyle = {
-    backgroundImage: `url(${header.src})`,
-    backgroundPosition: "center 20%",
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-  };
 
   return (
     <>
       
-      <section className="relative w-full h-screen" style={bgStyle}>
+      <section className="relative w-full h-screen">
+        <Image
+          src={header}
+          alt="Immanuel Zever"
+          fill
+          priority
+          className="object-cover object-[center_20%]"
+        />
         <div className="absolute inset-0 bg-black/50" />
 
         <div className="relative max-w-7xl mx-auto h-full flex flex-col items-center justify-center text-center gap-5 px-8 text-soft">
