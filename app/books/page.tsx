@@ -4,6 +4,7 @@ import library from "@/public/Images/library.jpg";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import RITM from "@/public/Images/book_angle_4.png"
 
 export default function BookPage() {
   const bgStyle = {
@@ -20,11 +21,11 @@ export default function BookPage() {
 
         <div className="relative max-w-7xl mx-auto h-full flex flex-col items-center justify-center text-center gap-5 px-8 text-soft">
           <h2 className="text-3xl md:text-6xl font-bold">
-            The Synergist&apos;s Books
+            The Synergist&apos;s Book
           </h2>
 
-          <p className="text-soft text-sm md:text-base leading-relaxed max-w-3xl">
-            Explore the Synergist's collection of books that challenge your
+          <p className="text-soft text-xs md:text-base leading-relaxed max-w-3xl">
+            Explore the Synergist&apos;s book that challenge your
             thinking, sharpen your strategy, and empower sustainable growth.
           </p>
 
@@ -46,18 +47,16 @@ export default function BookPage() {
           </h2>
 
           {/* IMAGES */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-2 my-8">
-            {BooksSlide.map((item, index) => (
-              <div className="flex justify-center" key={index}>
+          <div className="my-8">
+           <div className="flex items-center justify-center">
                 <Image
-                  src={item.image}
+                  src={RITM}
                   width={300}
                   height={400}
-                  className="w-60 md:w-60 h-60  md:h-64 rounded-md"
+                  className="w-full h-full rounded-md"
                   alt="book-images"
                 />
               </div>
-            ))}
           </div>
 
           {/* SUMMARY */}

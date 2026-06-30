@@ -9,12 +9,12 @@ const Wpsats = () => {
       <div className="container max-w-7xl mx-auto">
         <div className="px-6 font-syne mb-3">
           <h2 className="text-primary text-3xl md:text-5xl mb-5">
-            What do people say..
+            What are people saying about Immanuel Zever
           </h2>
           <p className="max-w-2xl text-light/70 mt-3">
             From entrepreneurs and executives to professionals and aspiring
-            leaders, hear what people have to say about the impact of The
-            Synergist's mentorship, and training.
+            leaders, hear what people have to say about the impact of The his
+            mentorship, and training.
           </p>
         </div>
 
@@ -35,9 +35,22 @@ const Wpsats = () => {
                 strokeWidth={1.5}
               />
 
-              <p className="text-base font-mont mb-5 leading-normal min-h-fit">
-                {review.text}
-              </p>
+              <div className="space-y-4">
+                {Array.isArray(review.text) ? (
+                  review.text.map((paragraph, index) => (
+                    <p
+                      key={index}
+                      className="text-base font-mont mb-5 leading-normal min-h-fit"
+                    >
+                      {paragraph}
+                    </p>
+                  ))
+                ) : (
+                  <p className="text-base font-mont mb-5 leading-normal min-h-fit">
+                    {review.text}
+                  </p>
+                )}
+              </div>
 
               <div className=" border-zinc-800 pt-4">
                 <h4 className="font-semibold text-sm md:text-base text-primary">

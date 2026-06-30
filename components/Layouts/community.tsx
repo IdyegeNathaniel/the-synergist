@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 
 const Community: React.FC = () => {
   return (
-    <section className="w-full min-h-screen bg-main py-4 text-light overflow-hidden">
+    <section className="w-full bg-main py-4 text-light overflow-hidden">
       <div className="max-w-7xl w-full flex flex-col-reverse md:flex-row gap-5 items-center mx-auto py-4 px-6 md:px-20">
         <motion.div initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}

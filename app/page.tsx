@@ -9,9 +9,9 @@ export default function Home() {
     <>
       <Hero />
       <Brief />
+      <Wpsats />
       <Books /> 
       <Community />
-      <Wpsats />
     </>    
   );
 }

@@ -25,7 +25,7 @@ export const TESTIMONIAL: TestimonialTypes[] = [
   {
     id: 2,
     author: "Clement",
-    text: "Reintroduction to Money is a powerful read. The Money Triangle framework alone shifts your mindset from simply earning money to truly understanding it.",
+    text: "Reintroduction to Money is a powerful read. The Money Trinity framework alone shifts your mindset from simply earning money to truly understanding it.",
   },
   {
     id: 3,

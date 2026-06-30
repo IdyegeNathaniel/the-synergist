@@ -5,6 +5,7 @@ import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import { WhatsApp } from "@/components/assets/svg";
 
 interface MessageTypes {
   name: string;
@@ -99,8 +100,8 @@ export default function ContactPage() {
                 <span>247synergytribe@gmail.com</span>
               </div>
               <div className="flex items-center gap-4">
-                <Phone size={22} strokeWidth={1.5} />
-                <span>+234 000 000 0000</span>
+                <WhatsApp fill="white" className="w-6 h-6" />
+                <span>+234 706 362 9703</span>
               </div>
               <div className="flex items-center gap-4">
                 <MapPin size={22} strokeWidth={1.5} />
